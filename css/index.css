@@ -31,25 +31,74 @@
     letter-spacing: 10px;
 }
 
-.typewriter .main-name {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret 1s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #836DC8; }
-  }
+.glassmorphism {
+    background: rgba(88, 51, 166, 0.09);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.7px);
+    -webkit-backdrop-filter: blur(11.7px);
+    border: 1px solid rgba(88, 51, 166, 1);
+}
+
+.card {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.skill-card {
+    transition: width 0.5s, height 0.5s;
+}
+
+.skill-card:hover {
+    height: 9.5rem !important;
+}
+
+.skill-name {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.skill-card:hover .skill-name {
+    opacity: 1;
+}
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.resume-btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #836DC8;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.resume-btn:hover {
+  transition: 1s ease-in-out;
+  background: #836DC8;
+}
+
+.resume-btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.resume-btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}

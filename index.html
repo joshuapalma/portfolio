@@ -7,10 +7,11 @@
     <link rel="icon" type="image/x-icon" href="images/joshua_logo.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/bb3f4b32fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="css/index.css"> 
 </head>
 <body class="bg-dark">
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="images/joshua_logo.svg" alt="" width="60" height="48" class="d-inline-block align-text-top">
@@ -27,9 +28,6 @@
                 <a class="nav-link  text-white" aria-current="page" href="#">Skills</a>
               </li>
               <li class="nav-item page-item me-4">
-                <a class="nav-link  text-white" aria-current="page" href="#">Experience</a>
-              </li>
-              <li class="nav-item page-item me-4">
                 <a class="nav-link  text-white" aria-current="page" href="#">Projects</a>
               </li>
               <li class="nav-item mb-3">
@@ -40,78 +38,247 @@
         </div>
     </nav>
 
-    <div class="container-fluid mt-5">
-      <div class="row">
-        <div class="col-lg-7 col-md-12 typewriter">
+    <div class="container-fluid">
+      <!-- 1st Sectiion -->
+      <div class="row mb-5" style="height: 80vh; margin-top: 8%;">
+        <div class="col-lg-7 col-md-12">
           <h6 class="fw-bolder text-white" style="letter-spacing: 5px;">Hello Everyone !</h6>
-          <div class="fw-bold text-white main-name">JOSHUA PALMA</div>
-          <span class="wrap"></span>
-          <p class="text-white lh-lg fw-700">With two years of hands-on experience in the dynamic field of web development, I bring a passion for crafting innovative solutions and a dedication to delivering high-quality results. My journey in the industry has equipped me with proficiency in a variety of technologies and frameworks, including but not limited to HTML, CSS, JavaScript, PHP, and Laravel.</p>
+          <div class="fw-bold text-white main-name mt-5">JOSHUA PALMA</div>
+          <p class="text-white fw-700 mt-3" style="line-height: 2.5; letter-spacing: 3px;">With two years of hands-on experience in the dynamic field of web development, I bring a passion for crafting innovative solutions and a dedication to delivering high-quality results. My journey in the industry has equipped me with proficiency in a variety of technologies and frameworks, including but not limited to HTML, CSS, JavaScript, PHP, and Laravel.</p>
+          
+          <div class="center">
+            <button class="resume-btn">
+              <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+              </svg>
+              <span class="fw-bold" style="font-size: 1rem;">Download Resume</span>
+            </button>
+          </div>
         </div>
         <div class="col-lg-5 col-md-12 text-center">
           <img src="images/joshua_palma.jpg" width="90%" height="100%" style="aspect-ratio: 16/16;">
         </div>
       </div>
+
+      <!-- 2nd Sectiion -->
+      <div class="row mt-5 bg-light" style="height: 100vh;">
+        <div class="col-lg-12 mt-5" style="height: 1%;">
+          <h3 class="fw-bolder text-center" style="letter-spacing: 10px;">Skills</h3>
+        </div>
+        <div class="col-lg-12 d-flex justify-content-evenly" style="height: 10%;">
+          <div class="card glassmorphism skill-card" style="width: 8rem; height: 6rem;">
+            <i class="devicon-html5-plain-wordmark colored card-img-top text-center p-3" style="font-size: 4rem;"></i>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 text-center fw-bold skill-name" style="letter-spacing: 3px;">
+                  HTML5
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card glassmorphism skill-card" style="width: 8rem; height: 6rem;">
+            <i class="devicon-css3-plain-wordmark colored card-img-top text-center p-3" style="font-size: 4rem;"></i>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 text-center fw-bold skill-name" style="letter-spacing: 3px;">
+                  CSS3
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card glassmorphism skill-card" style="width: 8rem; height: 6rem;">
+            <i class="devicon-javascript-plain colored card-img-top text-center p-3" style="font-size: 4rem;"></i>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 text-center fw-bold skill-name" style="font-size: .85rem;">
+                  JAVASCRIPT
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card glassmorphism skill-card" style="width: 8rem; height: 6rem;">
+            <i class="devicon-php-plain colored card-img-top text-center p-3" style="font-size: 4rem;"></i>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 text-center fw-bold skill-name" style="letter-spacing: 3px;">
+                  PHP
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card glassmorphism skill-card" style="width: 8rem; height: 6rem;">
+            <i class="devicon-mysql-plain-wordmark colored card-img-top text-center p-3" style="font-size: 4rem;"></i>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 text-center fw-bold skill-name" style="letter-spacing: 3px;">
+                  MYSQL
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12 d-flex justify-content-evenly mt-5" style="height: 10%;">
+          <div class="card glassmorphism skill-card" style="width: 8rem; height: 6rem;">
+            <i class="devicon-jquery-plain-wordmark colored card-img-top text-center p-3" style="font-size: 4rem;"></i>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 text-center fw-bold skill-name" style="letter-spacing: 3px;">
+                  JQUERY
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card glassmorphism skill-card" style="width: 8rem; height: 6rem;">
+            <i class="devicon-bootstrap-plain-wordmark colored card-img-top text-center p-3" style="font-size: 4rem;"></i>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 text-center fw-bold skill-name" style="font-size: .85rem;">
+                  BOOTSTRAP
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card glassmorphism skill-card" style="width: 8rem; height: 6rem;">
+            <i class="devicon-laravel-original-wordmark colored card-img-top text-center p-3" style="font-size: 4rem;"></i>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 text-center fw-bold skill-name" style="letter-spacing: 3px;">
+                  LARAVEL
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card glassmorphism skill-card" style="width: 8rem; height: 6rem;">
+            <i class="devicon-github-original-wordmark colored card-img-top text-center p-3" style="font-size: 4rem;"></i>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 text-center fw-bold skill-name" style="letter-spacing: 3px;">
+                  GITHUB
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card glassmorphism skill-card" style="width: 8rem; height: 6rem;">
+            <i class="devicon-gitlab-plain-wordmark colored card-img-top text-center p-3" style="font-size: 4rem;"></i>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 text-center fw-bold skill-name" style="letter-spacing: 3px;">
+                  GITLAB
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card glassmorphism skill-card" style="width: 8rem; height: 6rem;">
+            <i class="devicon-bitbucket-original-wordmark colored card-img-top text-center p-3" style="font-size: 4rem;"></i>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 text-center fw-bold skill-name" style="font-size: .85rem;">
+                  BITBUCKET
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 mb-5">
+        <div class="col-lg-12">
+          <h3 class="fw-bolder text-center fw-bold text-white" style="letter-spacing: 10px;">Projects</h3>
+        </div>
+        <div class="col-lg-12 mt-5 d-flex flex-wrap justify-content-around">
+
+          <div class="card mb-5" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+          <div class="card mb-5" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+          <div class="card mb-5" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 3</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+          <div class="card mb-5" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 4</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+          <div class="card mb-5" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 5</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+          <div class="card mb-5" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 6</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+          <div class="card mb-5" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 7</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+          <div class="card mb-5" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 8</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 p-3" style="background-color: #836DC8;">
+          <footer class="text-white text-center">All Rights Reserved @ 2024</footer>
+        </div>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script>
-      var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-      };
-
-      TxtType.prototype.tick = function() {
-          var i = this.loopNum % this.toRotate.length;
-          var fullTxt = this.toRotate[i];
-
-          if (this.isDeleting) {
-          this.txt = fullTxt.substring(0, this.txt.length - 1);
-          } else {
-          this.txt = fullTxt.substring(0, this.txt.length + 1);
-          }
-
-          this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-          var that = this;
-          var delta = 200 - Math.random() * 100;
-
-          if (this.isDeleting) { delta /= 2; }
-
-          if (!this.isDeleting && this.txt === fullTxt) {
-          delta = this.period;
-          this.isDeleting = true;
-          } else if (this.isDeleting && this.txt === '') {
-          this.isDeleting = false;
-          this.loopNum++;
-          delta = 500;
-          }
-
-          setTimeout(function() {
-          that.tick();
-          }, delta);
-      };
-
-      window.onload = function() {
-          var elements = document.getElementsByClassName('typewrite');
-          for (var i=0; i<elements.length; i++) {
-              var toRotate = elements[i].getAttribute('data-type');
-              var period = elements[i].getAttribute('data-period');
-              if (toRotate) {
-                new TxtType(elements[i], JSON.parse(toRotate), period);
-              }
-          }
-          // INJECT CSS
-          var css = document.createElement("style");
-          css.type = "text/css";
-          css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-          document.body.appendChild(css);
-      };
-    </script>
 </body>
 </html>
